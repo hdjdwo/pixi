@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { PixiSpriteProps } from '../../types/sprite';
 
 const PixiSprite: FC<PixiSpriteProps> = (props) => {
