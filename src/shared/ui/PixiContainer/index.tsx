@@ -1,7 +1,12 @@
-import React, { FC, ReactNode } from 'react';
+import { FC } from 'react';
+import { PixiContainerProps } from '../../types/container';
 
-const PixiContainer: FC<{ children: ReactNode }> = ({ children }) => {
-  return <pixiContainer>{children}</pixiContainer>;
+const PixiContainer: FC<PixiContainerProps> = ({ children, y = 0, x = 0 }) => {
+  return (
+    <pixiContainer x={x} y={y}>
+      {children}
+    </pixiContainer>
+  );
 };
 
 export default PixiContainer;
